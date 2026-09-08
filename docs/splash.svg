@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="960" height="220" role="img" aria-label="game-maker pipeline: reference study, brief and waves, builders, critic, judge, looping back">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="220" fill="#0f1117"/>
+
+  <!-- pipeline row -->
+  <g font-family="Menlo, Consolas, monospace" font-size="13" fill="#e5e7eb">
+
+    <!-- reference -->
+    <rect x="20" y="80" width="120" height="60" rx="6" fill="#1c2333" stroke="#3b4256"/>
+    <text x="80" y="105" text-anchor="middle" fill="#8fb8ff">reference</text>
+    <text x="80" y="122" text-anchor="middle" fill="#8fb8ff">study</text>
+
+    <line x1="140" y1="110" x2="176" y2="110" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- brief/waves -->
+    <rect x="180" y="80" width="120" height="60" rx="6" fill="#1c2333" stroke="#3b4256"/>
+    <text x="240" y="105" text-anchor="middle" fill="#8fb8ff">brief +</text>
+    <text x="240" y="122" text-anchor="middle" fill="#8fb8ff">waves</text>
+
+    <line x1="300" y1="110" x2="336" y2="110" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- builders (three stacked) -->
+    <rect x="340" y="52" width="120" height="34" rx="6" fill="#20301f" stroke="#3f5c3d"/>
+    <text x="400" y="74" text-anchor="middle" fill="#9be29b">builder A</text>
+    <rect x="340" y="93" width="120" height="34" rx="6" fill="#20301f" stroke="#3f5c3d"/>
+    <text x="400" y="115" text-anchor="middle" fill="#9be29b">builder B</text>
+    <rect x="340" y="134" width="120" height="34" rx="6" fill="#20301f" stroke="#3f5c3d"/>
+    <text x="400" y="156" text-anchor="middle" fill="#9be29b">builder C</text>
+
+    <line x1="460" y1="110" x2="496" y2="110" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- integrator -->
+    <rect x="500" y="80" width="120" height="60" rx="6" fill="#1c2333" stroke="#3b4256"/>
+    <text x="560" y="105" text-anchor="middle" fill="#8fb8ff">integrator</text>
+    <text x="560" y="122" text-anchor="middle" fill="#8fb8ff">core/</text>
+
+    <line x1="620" y1="110" x2="656" y2="110" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- critic -->
+    <rect x="660" y="80" width="120" height="60" rx="6" fill="#332018" stroke="#5c4030"/>
+    <text x="720" y="105" text-anchor="middle" fill="#f2b880">critic</text>
+    <text x="720" y="122" text-anchor="middle" fill="#f2b880">score / gate</text>
+
+    <line x1="780" y1="110" x2="816" y2="110" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- judge -->
+    <rect x="820" y="80" width="120" height="60" rx="6" fill="#332018" stroke="#5c4030"/>
+    <text x="880" y="105" text-anchor="middle" fill="#f2b880">judge</text>
+    <text x="880" y="122" text-anchor="middle" fill="#f2b880">A / B</text>
+
+    <!-- loop back from critic to builders -->
+    <path d="M 720 80 C 720 20, 400 20, 400 46" fill="none" stroke="#c98a4b" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+    <text x="560" y="24" text-anchor="middle" fill="#c98a4b" font-size="12">fail -&gt; another round</text>
+
+    <!-- STATUS.json note -->
+    <text x="480" y="200" text-anchor="middle" fill="#6b7280" font-size="12">docs/STATUS.json -- resume from the weakest module, never from scratch</text>
+  </g>
+</svg>

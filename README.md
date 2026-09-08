@@ -1,5 +1,9 @@
 # game-maker
 
+<p align="center">
+  <img src="docs/splash.svg" alt="Pipeline diagram: reference study feeds a brief and build waves, three builders work in parallel, an integrator merges into core, a critic scores and gates each round sending failures back for another pass, and a judge does blind A/B comparison at the end. docs/STATUS.json tracks progress so the loop resumes from the weakest module.">
+</p>
+
 A harness for building **any game** from a description and references — city
 builder, RTS, action, shooter, racing, open world, platformer, puzzle, 3D or
 2D — to a stated visual and gameplay bar, with a fleet of agents that build,
