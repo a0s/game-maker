@@ -3,3 +3,4 @@ dist/
 .DS_Store
 workspace/*/shots/
 workspace/*/node_modules/
+.claude/scheduled_tasks.lock

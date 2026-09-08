@@ -1,13 +1,13 @@
 # game-skill
 
-A harness for building any game from a description and references — city
+A harness for building any game from a description and references (city
 builder, RTS, action, shooter, racing, open world, platformer, puzzle, 3D or
-2D — to a stated visual and gameplay bar with a fleet of agents: a reference
+2D) to a stated visual and gameplay bar with a fleet of agents: a reference
 study that turns screenshots into checkable targets, builders per subsystem,
 one integrator for the shared core, an art-director critic that writes no
 code, blind A/B judges, and a state file that lets the loop resume from the
 weakest module instead of from scratch. The seed example was a Cities:
-Skylines II–class city builder in Three.js; the method does not depend on
+Skylines II-class city builder in Three.js; the method does not depend on
 it.
 
 Everything is one skill plus four agent definitions. It works identically in

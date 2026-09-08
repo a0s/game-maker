@@ -4,9 +4,9 @@
   <img src="docs/splash.svg" alt="Pipeline diagram: reference study feeds a brief and build waves, three builders work in parallel, an integrator merges into core, a critic scores and gates each round sending failures back for another pass, and a judge does blind A/B comparison at the end. docs/STATUS.json tracks progress so the loop resumes from the weakest module.">
 </p>
 
-A harness for building **any game** from a description and references — city
+A harness for building **any game** from a description and references (city
 builder, RTS, action, shooter, racing, open world, platformer, puzzle, 3D or
-2D — to a stated visual and gameplay bar, with a fleet of agents that build,
+2D) to a stated visual and gameplay bar, with a fleet of agents that build,
 integrate, critique and judge each other's work.
 
 Works identically in **Claude Code** and **Codex CLI** (and anything else
@@ -19,8 +19,8 @@ copy of the skill.
 
 This harness formalises a prompt posted to
 [r/ClaudeCode](https://www.reddit.com/r/ClaudeCode/comments/1w4qziv/ok_this_is_wild_used_claude_fable_51_and_said/)
-by u/DesignEddi, who gave Claude Code a single prompt — "build a Cities:
-Skylines II–class city builder in Three.js" — with instructions to write its
+by u/DesignEddi, who gave Claude Code a single prompt: "build a Cities:
+Skylines II-class city builder in Three.js", with instructions to write its
 own architecture, spin up a swarm of builder agents, and grade its own work
 with a separate critic before calling anything done. The result was a
 long-running, mostly unsupervised build that produced a genuinely
@@ -32,8 +32,8 @@ about the process). `references/prompt-analysis.md` is a line-by-line
 critique of the original prompt: what to keep verbatim, where it would
 stall or lie in practice, and fifteen fixes that each widen what counts as
 proof without narrowing how a builder is allowed to reach the bar. The rest
-of the skill generalises the method — reference study, genre-derived module
-decomposition, the builder/integrator/critic/judge loop, persisted state —
+of the skill generalises the method (reference study, genre-derived module
+decomposition, the builder/integrator/critic/judge loop, persisted state)
 so it targets *any* game, not only that one city builder.
 
 ## Quick start
@@ -61,13 +61,13 @@ and build order from the genre, writes the architecture and a
 screenshot/log verification harness before any feature code, then fans out
 one builder agent per module, gauntlets every round with an art-director
 critic that takes its own screenshots and scores against a written rubric,
-and loops — resuming from the weakest module, never from scratch — until
+and loops (resuming from the weakest module, never from scratch) until
 every module passes or hits a documented ceiling.
 
 If your host supports multi-agent orchestration ("ultracode" / Workflow),
 the skill uses it; otherwise it runs the same roles as sequential agent
-calls. Either way the contract — one folder per builder, no claim without a
-screenshot someone opened and looked at, honest scores — is identical.
+calls. Either way the contract (one folder per builder, no claim without a
+screenshot someone opened and looked at, honest scores) is identical.
 
 ## Layout
 
@@ -88,7 +88,7 @@ CLAUDE.md                 symlink -> AGENTS.md
 Nothing is duplicated between agent frameworks. `.claude/` holds symlinks
 only, so a change to the skill or an agent definition is a change
 everywhere at once. A `workspace/` (or wherever you point it) holds the
-actual game projects this skill builds — none is checked into this repo,
+actual game projects this skill builds. None is checked into this repo,
 which ships the method, not a game.
 
 ## The loop, in one screen
@@ -116,7 +116,7 @@ Full detail lives in
 | `brief-template.md` | writing or completing a brief; two worked examples (a city builder, an action roguelike) |
 | `architecture-checklist.md` | what `ARCHITECTURE.md` must contain before feature code starts |
 | `verification-loop.md` | the screenshot/log harness contract; what counts as evidence per module type |
-| `critic-rubric.md` | the 0–10 scale, the gates, the "looks like programmer art" tells, the report format |
+| `critic-rubric.md` | the 0-10 scale, the gates, the "looks like programmer art" tells, the report format |
 | `orchestration.md` | roles, wave derivation, git conventions, a workflow-script skeleton |
 | `status-schema.md` | the `docs/STATUS.json` schema and how the next module to work on is chosen |
 | `prompt-analysis.md` | the critique of the original Reddit prompt this skill is built from |

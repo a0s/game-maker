@@ -1,13 +1,13 @@
 # Analysis of the original brief
 
-The brief that seeded this skill (a Cities: Skylines II–class city builder in
+The brief that seeded this skill (a Cities: Skylines II-class city builder in
 Three.js + Vite, built by a fleet of agents) is reproduced in
 `brief-template.md` as the worked example. This file records what is strong in
-it, where it will fail in practice, and what to change — with the constraint
+it, where it will fail in practice, and what to change, with the constraint
 that the model executing it is assumed to be smarter than the author, so every
 fix must widen the evidence required, never narrow the method allowed.
 
-## What is strong — keep verbatim
+## What is strong: keep verbatim
 
 1. **A taste target and an anti-goal.** "AAA bar, photographic PBR, never
    programmer art" is a stronger steer than any list of techniques. It lets a
@@ -90,7 +90,7 @@ fix must widen the evidence required, never narrow the method allowed.
 15. **Asset policy has no size cap.** "Poly Haven" with no cap and no vendoring
     rule can pull gigabytes and make the game depend on the network at runtime.
 
-## Improvements — each widens evidence, none narrows method
+## Improvements: each widens evidence, none narrows method
 
 | # | Change | Why it does not over-constrain |
 |---|--------|--------------------------------|

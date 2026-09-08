@@ -11,7 +11,7 @@ a list.
 1. **Images** the user placed in `docs/reference/` (screenshots, concept
    art, photos). Open every one with the image tool.
 2. **Video** (a file or a link). Watch or sample frames; note motion.
-3. **Named titles** ("like Hades", "Cities: Skylines II–class"). Use what
+3. **Named titles** ("like Hades", "Cities: Skylines II-class"). Use what
    you know about the title's look and say in REFERENCE.md that the
    targets come from knowledge, not from images in the project.
 4. **A prose description** only. Derive the closest well-known title or
@@ -58,7 +58,7 @@ genre: <one line>
 closest titles: <names>
 
 ## Look targets (checkable)
-camera:    <e.g. 35–55° down, orbit, FOV 45, foreground element at street level>
+camera:    <e.g. 35-55° down, orbit, FOV 45, foreground element at street level>
 scale:     <e.g. a door is 2.1 m and ~40 px at the "street" preset>
 value:     <e.g. noon: deep shadows at 10% grey, no clipped whites except sun glints>
 materials: <families + what makes them read>

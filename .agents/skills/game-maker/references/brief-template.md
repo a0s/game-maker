@@ -62,7 +62,7 @@ the verbs the player performs and the things that must visibly happen}.
 4. **Gauntlet every module.** After each builder round a separate critic (an
    art director who writes no code) takes its own captures at several times
    of day and zoom levels, checks the API contract, the console log and perf,
-   and scores 0–10 against {REFERENCE BASIS}: 10 = indistinguishable, 8.5 =
+   and scores 0-10 against {REFERENCE BASIS}: 10 = indistinguishable, 8.5 =
    AAA with nits, 7 = good indie, 5 = programmer art. Pass = ≥{THRESHOLD} with
    zero uncaught errors. **Reference rule:** score against user-supplied
    images in `docs/reference/` if present, else against `docs/REFERENCE.md`
@@ -100,12 +100,12 @@ Start now.
 
 ---
 
-## Worked example A: Cities: Skylines II–class city builder
+## Worked example A: Cities: Skylines II-class city builder
 
-GENRE/GAME TYPE: Cities: Skylines II–class city builder.
+GENRE/GAME TYPE: Cities: Skylines II-class city builder.
 STACK: Three.js (latest release, version pinned in package.json) + Vite, plain
 ES modules.
-BAR: AAA — photographic PBR materials, physically plausible sun/sky/shadows,
+BAR: AAA, photographic PBR materials, physically plausible sun/sky/shadows,
 atmospheric depth, a living city at night, believable roads and traffic.
 ANTI-GOAL: programmer art.
 DEFINITION OF DONE: the player draws roads, paints residential, commercial and
@@ -123,7 +123,7 @@ texture set, ≤300 MB total vendored assets.
 WAVES: (1) core + verification harness; (2) terrain, environment, roads,
 simulation, ui, audio, effects; (3) zoning, buildings, props, traffic, tools;
 (4) demo city.
-REFERENCE BASIS: Cities: Skylines II look — user-supplied screenshots in
+REFERENCE BASIS: Cities: Skylines II look, user-supplied screenshots in
 `docs/reference/` if present, else the written rubric in `critic-rubric.md`.
 THRESHOLD/ROUNDS: 8.5, up to 4 rounds per module per wave.
 
@@ -132,7 +132,7 @@ THRESHOLD/ROUNDS: 8.5, up to 4 rounds per module per wave.
 GENRE/GAME TYPE: Hades-class isometric action roguelike.
 STACK: Three.js (pinned) + Vite, plain ES modules; 3D characters with
 stylised shading, fixed isometric camera.
-BAR: AAA feel — readable silhouettes at the fixed camera distance, hit
+BAR: AAA feel, readable silhouettes at the fixed camera distance, hit
 feedback within 4 frames, animation with anticipation and follow-through,
 painterly lit environments with strong value separation, a screen that
 stays readable with twenty enemies and effects on it.

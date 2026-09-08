@@ -23,7 +23,7 @@ The table rows are starting points; the reference study overrides them.
    slice (one verb end to end) comes as early as the dependency graph
    allows, never only at the end.
 6. **Assign an evidence type** per module (see `verification-loop.md`) and
-   a **visibility weight** 0.2–1.0 for the STATUS gain formula.
+   a **visibility weight** 0.2-1.0 for the STATUS gain formula.
 7. **Name the shared presets** so builders and critic capture the same
    framings across rounds: at least one wide, one close, one at the
    hardest lighting condition, one in motion.

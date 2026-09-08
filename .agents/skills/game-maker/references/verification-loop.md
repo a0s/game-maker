@@ -65,7 +65,7 @@ particles) and are labelled.
 | Module kind | Evidence |
 |-------------|----------|
 | World and environment (terrain, level, sky/weather, water, foliage, props, effects, demo) | PNG at ≥2 presets × the lighting conditions the game has (e.g. dawn, noon, night; or lit/dark interiors) plus the JSON log |
-| Characters, vehicles, units (rig, locomotion, animation) | PNGs at close and wide plus an unfrozen motion capture sequence (3–5 frames at fixed intervals) and an animation log (state, blend weights, no pops) |
+| Characters, vehicles, units (rig, locomotion, animation) | PNGs at close and wide plus an unfrozen motion capture sequence (3-5 frames at fixed intervals) and an animation log (state, blend weights, no pops) |
 | Simulation, AI, economy, pathfinding | PNGs plus an event log (`docs/shots/<module>/<id>.events.jsonl`) showing ticks, counts, and invariants held; state-based acceptance results |
 | Audio | A loudness log and a spectrogram or waveform PNG rendered from the mixed output over a scripted 30 s scene; plus the JSON log for errors |
 | Tools, UI, input | Action log of a scripted interaction (the module's verbs, undo, resize) with before/after PNGs at two viewport sizes |

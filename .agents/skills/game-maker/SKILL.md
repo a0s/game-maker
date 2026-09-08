@@ -1,6 +1,6 @@
 ---
 name: game-maker
-description: Build any game from a description and references — city builder, RTS, action/roguelike, shooter, racing, open world, platformer, puzzle, flight, 3D or 2D — to a stated visual and gameplay bar with a fleet of agents. Studies the references into checkable look targets, derives the module decomposition from the genre, writes the architecture and verification harness first, runs one builder per module in dependency waves with an integrator for the shared core, an art-director critic that scores its own captures against the rubric, blind A/B judges, and a persisted status file so the loop resumes from the weakest module. Use whenever the request is to build or extend a game, to make a scene "look AAA" or "like <title>", to run a builder/critic loop, or to turn a one-line game idea plus screenshots into a runnable multi-agent brief. Produces docs/REFERENCE.md, ARCHITECTURE.md, docs/DECISIONS.md, docs/STATUS.json, a capture tool with JSON logs, per-module showcases, ranked critic reports, and a playable demo — not a tech demo with no game in it.
+description: Build any game from a description and references (city builder, RTS, action/roguelike, shooter, racing, open world, platformer, puzzle, flight, 3D or 2D) to a stated visual and gameplay bar with a fleet of agents. Studies the references into checkable look targets, derives the module decomposition from the genre, writes the architecture and verification harness first, runs one builder per module in dependency waves with an integrator for the shared core, an art-director critic that scores its own captures against the rubric, blind A/B judges, and a persisted status file so the loop resumes from the weakest module. Use whenever the request is to build or extend a game, to make a scene "look AAA" or "like <title>", to run a builder/critic loop, or to turn a one-line game idea plus screenshots into a runnable multi-agent brief. Produces docs/REFERENCE.md, ARCHITECTURE.md, docs/DECISIONS.md, docs/STATUS.json, a capture tool with JSON logs, per-module showcases, ranked critic reports, and a playable demo, not a tech demo with no game in it.
 license: MIT
 compatibility: Node 18+, a Chromium for captures (puppeteer), a real GPU-backed browser for perf numbers. Blender optional. Multi-agent orchestration via the host's Agent/Workflow tools; sequential Agent calls otherwise.
 metadata:
@@ -41,7 +41,7 @@ Read `references/orchestration.md` for roles and waves, and load the
 has not opted into multi-agent orchestration, run the same roles as
 sequential Agent calls; the contract is identical.
 
-## Step 0a — study the references
+## Step 0a: study the references
 
 Follow `references/reference-study.md`. Open every image in
 `docs/reference/`, sample any video, and write `docs/REFERENCE.md`: camera,
@@ -52,7 +52,7 @@ targets from knowledge and say so. If they gave only prose, pick the
 closest known titles, state the assumption, proceed. The critic quotes
 REFERENCE.md lines in every report; without this file "AAA" is a mood.
 
-## Step 0b — the brief and the decomposition
+## Step 0b: the brief and the decomposition
 
 If the user gave a full brief, keep it and fill only the gaps below. If
 they gave one line, write the brief from `references/brief-template.md`
@@ -80,7 +80,7 @@ The gaps a brief almost always has (see `references/prompt-analysis.md`):
 8. **Stack and asset caps**, a neutral project name (no trademark in the
    repo), the stack decision written once in `docs/DECISIONS.md`.
 
-## Step 1 — architecture and harness before features
+## Step 1: architecture and harness before features
 
 The integrator writes `ARCHITECTURE.md` against
 `references/architecture-checklist.md`, records the stack, renderer and
@@ -95,7 +95,7 @@ query for showcase/preset/scenario/time/seed/freeze, JSON log fields,
 headless vs real-GPU rule, evidence types, and state-based acceptance
 tests for gameplay.
 
-## Step 2 — waves
+## Step 2: waves
 
 One builder per module, own worktree, own folder, plus
 `docs/shots/<module>/`. Wave 0 is core and harness. Then by dependency and
@@ -113,7 +113,7 @@ Agent definitions to spawn with: `.agents/agents/game-builder.md`,
 names the module, the game, and the paths to BRIEF, REFERENCE,
 ARCHITECTURE and STATUS.
 
-## Step 3 — the gauntlet
+## Step 3: the gauntlet
 
 After every builder round the critic follows `references/critic-rubric.md`:
 its own captures at the shared presets (wide, close, hardest lighting,
@@ -128,7 +128,7 @@ No gain for two consecutive rounds → `ceiling`, with the blocking reason.
 A ceiling is honest and is listed in the final report; it is never
 relabelled as a pass.
 
-## Step 4 — final gate and judges
+## Step 4: final gate and judges
 
 Whole-game critic: definition of done first, verb by verb, using the
 state-based acceptance tests; then the visual rubric on the shared
@@ -137,7 +137,7 @@ report. Judges get shuffled A/B pairs with no provenance and return
 winner, confidence, reason, and the tell if they spotted one. Judging is
 recorded in `docs/judging/`, not gating.
 
-## Step 5 — STATUS.json and resuming
+## Step 5: STATUS.json and resuming
 
 `docs/STATUS.json` (schema in `references/status-schema.md`) is written
 before every spawn and after every report, so a usage limit or a crash
